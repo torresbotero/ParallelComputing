@@ -1,0 +1,30 @@
+<% include header %>
+  <a class="btn btn-primary btn-lg" href="/" role="button">New search</a>
+  <h1><%-title %></h1>
+  <h3>Searched words: [<%-searched%>]</h3>
+  <div class="row">
+    <div class="col-md-12">
+      <label class="hide" id="ut"><%-search_response%></label>
+    </div>
+  </div>
+
+<div class="row top-buffer">
+  <div id="betterContainer" class="list-group">
+    <div style="background-color: #4cae4c" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 style="text-align: center; " class="mb-1">Best Results: more than one queried words were found in document</h5>
+        </div>
+      </div>
+    <div id="bettersearchingText" class="list-group-item list-group-item-action flex-column align-items-start">Searching ...</div>
+  </div>
+  <div id="booksContainer" class="list-group">
+    <div style="background-color: ivory" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 style="text-align: center; " class="mb-1">Other Results: only one queried word was found in document</h5>
+      </div>
+    </div>
+    <div id="searchingText" class="list-group-item list-group-item-action flex-column align-items-start">Searching ...</div>
+  </div>
+</div>
+<script src="/js/listBooksScript.js"></script>
+<% include footer %>

@@ -1,0 +1,20 @@
+<% include header %>
+<a class="btn btn-primary btn-lg" href="/backto_search/<%-lastinputwords%>" role="button">Back to search</a>
+<a class="btn btn-primary btn-lg" href="/" role="button">New search</a>
+<h1><%-title %></h1>
+<h3>Document: [<%-searched%>]</h3>
+<div class="row">
+  <div class="col-md-12">
+    <label class="hide" id="docNameSimilarity"><%-searched%></label>
+    <label class="hide" id="lastinputwords"><%-lastinputwords%></label>
+  </div>
+</div>
+
+
+<div class="row top-buffer">
+  <div id="similContainer" class="list-group">
+
+  </div>
+</div>
+<script src="/js/listSimilarityScript.js"></script>
+<% include footer %>
